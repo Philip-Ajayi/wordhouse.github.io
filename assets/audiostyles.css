@@ -1,0 +1,82 @@
+﻿/* CSS for the sidebar menu and grid system */
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 50;
+}
+
+.menu-button {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+}
+
+
+#search-button {
+background-color: #007bff;
+color: #fff;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+}
+
+
+.menu-open .sidebar {
+    left: 0;
+}
+
+.sidebar {
+    position: absolute;
+    top: 40;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    overflow-y: auto;
+    transition: left 0.3s;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar li.active {
+    background-color: #007bff;
+}
+
+main {
+    padding: 20px;
+    margin-left: 0; /* Adjust for the width of the sidebar */
+    width: 100%;
+}
+
+/* Responsive 2-column grid */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-item {
+    flex-basis: calc(50% - 20px); /* Two columns with some margin */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    display: block;
+    box-sizing: border-box; /* Ensure padding and border don't affect width */
+}

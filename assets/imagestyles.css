@@ -1,0 +1,24 @@
+﻿body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    margin: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+blockquote {
+    width: 100%;
+    height: 300px; /* Adjust this as needed */
+    overflow: hidden;
+}
+
+#loadMore {
+    display: block;
+    margin: 20px auto;
+}

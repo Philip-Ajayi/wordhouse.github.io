@@ -1,0 +1,52 @@
+﻿
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+img {
+    width: 25%; /* Display 4 images at once */
+    object-fit: cover;
+    height: 300px; /* Adjust the height uniformly across all images */
+}
+
+button.next {
+    position: static;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button.prev {
+    position: static;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
