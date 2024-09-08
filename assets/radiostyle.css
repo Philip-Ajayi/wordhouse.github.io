@@ -1,0 +1,261 @@
+body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+
+    #hero-section {
+      display: flex;
+      flex-direction: column;
+      background-image: url('radio/hero.jpg');
+      background-size: 100% 300px;
+      height: 300px;
+      text-size: 54px
+    }
+
+
+@media (max-width: 768px) {
+#hero-section {
+background-size: 100% 300px;
+}
+}
+
+    .animated-text {
+      opacity: 0;
+      transform: scale(0.5);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+      margin: 20px 0;
+      text-align: right;
+      color: #FFFFFF;
+    }
+
+
+    #welcome-text {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s ease, transform 1s ease;
+      text-align: center; 
+    }
+    .firstcontain{
+      margin: 0;
+      display: grid;
+      grid-template-columns: 65% 35%;
+    }
+
+
+    .firstcontainer {
+      display: flex;
+      flex-direction: column;
+      align-items: none;
+      background-color: #3498db;
+      color: #fff;
+      height: 100%;
+      border-right: 2px solid #fff;
+      box-sizing: border-box; 
+    }
+
+    .firstcontaintext {
+      margin: 10px;
+      font-size: 24px;
+    }
+
+    @media (max-width: 768px) {
+    .firstcontain {
+        grid-template-columns: 100%;
+      }
+
+      .firstcontainer {
+        border-bottom: 2px solid #fff;
+      }
+    }
+
+
+    .hosts {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .host-container {
+      display: flex;
+      justify-content: left;
+      margin-top: 20px;
+    }
+ @media (max-width: 768px) {
+    .host-container {
+      display: block;
+}
+}
+    .host {
+      margin: 0 10px;
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .host img {
+      max-width: 300px;
+      height: 300px;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+
+    .host p {
+      margin: 10px;
+      color: #555;
+    }
+
+    .host:hover {
+      transform: scale(1.1);
+    }
+
+    .host:hover img {
+      filter: grayscale(0%);
+    }
+
+
+
+
+          .program {
+            margin-left: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #e74c3c;
+            padding-left: 10px;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+        }
+
+        .date {
+            font-style: italic;
+            color: #006400;
+            margin: 5px 0;
+        }
+
+        .time {
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 5px 0;
+        }
+
+
+
+
+
+#expressionRadioBanner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+
+
+
+
+
+    #audioPlayercontainer {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+
+    #audioPlayer {
+      display: flex;
+      align-items: center;
+    }
+
+    #playPauseBtn {
+      cursor: pointer;
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    #audioLine {
+      height: 5px;
+      width: 200px;
+      background-color: #ccc;
+      border-radius: 3px;
+      margin-right: 10px;
+    }
+
+    #liveIndicator {
+      font-weight: bold;
+    }
+
+
+
+
+        #radioInfo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .programnext {
+            margin-right: 20px;
+        }
+
+        .caption {
+            color: #3498db;
+        }
+
+        .program-name {
+            color: #333;
+        }
+
+
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+    .image img {
+      max-width: 300px;
+      height: 300px;
+    }
+
+    .text {
+      padding: 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: 100%;
+      }
+    }
+
+
+
+
+ #radioText {
+     margin: 10px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .emphasis {
+      font-weight: bold;
+      color: #0066cc;
+    }
+
+
+
