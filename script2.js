@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Load header
-    fetch("https://github.com/Philip-Ajayi/wordhouse.github.io/blob/main/whheaderaudiopage.html")
+    fetch("https://mivwordhouse.com/whheaderaudiopage.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("header-placeholder").innerHTML = data;
