@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f7f7f9;
+  transition: all 0.3s ease-in-out;
+}
+
+body.dark {
+  background-color: #2b2b2b;
+  color: #f7f7f9;
+}
+
+header {
+  background-color: #6a0dad;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #4a0072;
+}
+
+#themeToggle {
+  margin-top: 10px;
+  background-color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#themeToggle:hover {
+  background-color: #f1f1f1;
+}
+
+#search-section {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+  gap: 15px;
+}
+
+#searchBar, select {
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+#searchBar:focus, select:focus {
+  border-color: #6a0dad;
+  box-shadow: 0 0 5px rgba(106, 13, 173, 0.7);
+}
+
+#library {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+/* Track Container Styling */
+.track {
+  background-color: #fff; /* Light theme background */
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  color: #333;
+}
+
+body.dark .track {
+  background-color: #444; /* Dark theme background */
+  color: #f7f7f9; /* Light text for dark mode */
+}
+
+.track h3, .track p {
+  margin: 5px 0;
+}
+
+.track img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.track audio {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.track audio:hover {
+  background-color: #6a0dad;
+  border-color: #6a0dad;
+}
+
+.track:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #6a0dad;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  border-top: 2px solid #4a0072;
+}
+
+footer a {
+  color: #f7f7f9;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
