@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             const coverImage = imageExists ? imagePath : "assets/covers/default.jpg";
 
             trackElement.innerHTML = `
-                <img src="${coverImage}" alt="${track.title} Cover" class="track-cover">
+                <img src="${coverImage}" loading="lazy" alt="${track.title} Cover" class="track-cover">
                 <h3>${track.title}</h3>
                 <p><em>${track.minister}</em></p>
                 <p><strong>Series:</strong> ${track.series}</p>
