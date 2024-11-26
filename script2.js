@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error("Error loading header:", error));
 
     // Load footer
-    fetch("https://github.com/Philip-Ajayi/wordhouse.github.io/blob/main/whfooteraudiopage.html")
+    fetch("https://mivwordhouse.com/whfooteraudiopage.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("footer-placeholder").innerHTML = data;
